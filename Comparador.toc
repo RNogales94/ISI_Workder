@@ -1,0 +1,5 @@
+\select@language {spanish}
+\contentsline {section}{\numberline {1}T\IeC {\'\i }tulo provisional del proyecto}{3}{section.1}
+\contentsline {section}{\numberline {2}Descripci\IeC {\'o}n del \IeC {\'a}mbito del proyecto}{3}{section.2}
+\contentsline {section}{\numberline {3}Proyectos y sistemas existentes en el mismo \IeC {\'a}mbito}{3}{section.3}
+\contentsline {section}{\numberline {4}Lista de fuentes de datos que se pretenden utilizar}{3}{section.4}

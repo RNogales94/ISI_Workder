@@ -1,0 +1,85 @@
+\input{preambuloSimple.tex}
+
+%----------------------------------------------------------------------------------------
+%	TÍTULO Y DATOS DEL ALUMNO
+%----------------------------------------------------------------------------------------
+
+\title{	
+\normalfont \normalsize 
+\textsc{\textbf{Ingeniería de Sistemas de Información (2017-2018)} \\ Grado en Ingeniería Informática \\ Universidad de Granada} \\ [25pt] % Your university, school and/or department name(s)
+\horrule{0.5pt} \\[0.4cm] % Thin top horizontal rule
+\huge Presupuesto de despliegue del sistema \\ % The assignment title
+\horrule{2pt} \\[0.5cm]
+}
+
+\author{Marta Amor Jurado \\ Melani Álvarez Santos \\ Rafa Nogales Vaquero} % Nombre y apellidos
+
+\date{\normalsize\today} % Incluye la fecha actual
+
+%----------------------------------------------------------------------------------------
+% DOCUMENTO
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+\maketitle
+\newpage 
+\tableofcontents
+\newpage
+\setlength{\parindent}{1cm}
+
+%----------------------------------------------------------------------------------------
+%	Introducción
+%----------------------------------------------------------------------------------------
+
+\section{Introducción}
+Partiendo de la propuesta del proyecto \textbf{Buscador de trabajo y trabajadores}, se realiza el presupuesto de despliegue del mismo.
+Se elabora un presupuesto del coste de implantación del sistema en dos escenarios diferentes:
+\begin{itemize}
+	\item Sistema \textit{in house}.
+	\item Sistema basado en la nube.
+\end{itemize}
+
+
+%----------------------------------------------------------------------------------------
+%	Sistema {in house}
+%----------------------------------------------------------------------------------------
+
+\section{Sistema \textit{in house}}
+\begin{itemize}
+\item \textbf{Hardware costes:}
+\begin{itemize}
+	\item Dos servidores (primario y desarrollo): 1.200\euro.
+	\item Servidor de BD: 400\euro.
+	\item Sistema de almacenamiento (RAID 5): 800\euro.
+	\item Armarios y cableado: 300\euro.
+	\item Aire acondicionado: 500\euro.  
+\end{itemize}
+
+\item \textbf {Red:} 700\euro \hspace{1pt} por 2 líneas de nternet de fibra con distintos proveedores con IP fija.
+
+\item \textbf{Tiempo por despliegue:} 6.000\euro \hspace{1pt} (ejecución del sistema).
+
+\item \textbf{Total:} 9.900\euro.
+\end{itemize}
+
+Sistema base hasta 20.000 usuarios al día + 3.500\euro \hspace{1pt} por cada tramo de 10.000 usuarios/día (un servidor más) + 800\euro/mes mantenimiento.
+
+%----------------------------------------------------------------------------------------
+%	Sistema basado en la nube
+%----------------------------------------------------------------------------------------
+
+\section{Sistema basado en la nube}
+\begin{itemize}
+	\item \textbf{Alquiler del sistema:} 80\euro/mes por servidro (por instancia).
+	\item \textbf{Tiempo por despliegue:} 500\euro.
+	\item \textbf{Total:}
+	\begin{itemize}
+	\item Primer mes: 730\euro \hspace{1pt} (tráfico estimado de 20.000 usuarios/día) + 120\euro \hspace{1pt} por cada 20.000usuarios/día = 850\euro.
+	\item Resto de meses: 120\euro \hspace{1pt} por cada 20.000 usuarios/día + 200\euro/mes por mantenimiento = 320\euro.
+\end{itemize}
+
+\end{itemize}
+
+
+
+\end{document}

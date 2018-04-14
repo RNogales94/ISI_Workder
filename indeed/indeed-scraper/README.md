@@ -1,4 +1,4 @@
-#Ejemplo de uso:
+# Ejemplo de uso:
 
 ```
 $ node indeed.js 

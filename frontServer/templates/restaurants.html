@@ -1,0 +1,149 @@
+{% extends 'home.html' %}
+
+{% block title %} ISI - Buscador de empleo {% endblock %}
+
+{% block login_form %} {% endblock %}
+
+{% block nav_title %}
+ISI
+{% endblock %}
+
+{% block panel %}
+
+<script>
+        var inverted = false;
+        var font_changed = false;
+        var searchBy = "name"
+        var id_row = 0
+        var first_shown = true
+        var primero = 0
+        var ultimo = 10
+        var last_id_row = 0
+
+        function appendData(parsed_data){
+                if(! first_shown){
+                        $('td').remove();
+                }
+                //Titulo 	Ciudad 	Descripcion 	Empresa 	Enlace
+                $.each( parsed_data, function( i ) {
+                        $("#results").append(
+                                        "<tr id=result"+id_row+">"
+                                        +"<td>"+ parsed_data[i].title +" </td>"
+                                        +"<td> "+ parsed_data[i].location +"</td>"
+                                        +"<td>"+ parsed_data[i].summary +"</td>"
+                                        +"<td>"+ parsed_data[i].company +"</td>"
+                                        +"<td>"+ parsed_data[i].url +"</td>"
+                                        +"</tr>");
+                        id_row = id_row + 1
+                });
+                for (var i = ultimo; i <= id_row; i++) {
+                        $("#result"+i).hide();
+                }
+
+                last_id_row = id_row-1
+                first_shown = false
+                id_row = 0
+                primero = 0
+                ultimo = 10
+        }
+
+        function next(){
+                for (var i = primero; i <= ultimo; i++) {
+                        $("#result"+i).hide();
+                }
+                for (var i = ultimo+1; i <= ultimo+10; i++) {
+                        $("#result"+i).show();
+                }
+                primero = ultimo
+                ultimo = ultimo+10
+                if(ultimo > last_id_row){
+                        ultimo = last_id_row
+                        primero = last_id_row-10
+                }
+        }
+
+        function prev(){
+                for (var i = primero; i <= ultimo; i++) {
+                        $("#result"+i).hide();
+                }
+                for (var i = primero; i >= primero-10; i--) {
+                        $("#result"+i).show();
+                }
+
+                primero = primero-10
+                ultimo = primero
+                if(primero < 0){
+                        primero = 0
+                        ultimo = 10
+                }
+        }
+
+
+
+        $(document).ready(function(){
+                $("#name_check").click(function(){
+                        searchBy = "title"
+                });
+                $("#location_check").click(function(){
+                        searchBy = "location"
+                });
+                $("#company_check").click(function(){
+                        searchBy = "company"
+                });
+                $("#summary_check").click(function(){
+                        searchBy = "summary"
+                });
+
+                $("#searchButton").click(function(){
+                        $.get("/api/jobs/"+searchBy+"/"+$("#search_field").val()).done(function(data) {
+                                var parsed_data = $.parseJSON(data);
+                                appendData(parsed_data);
+                        });
+                });
+
+                $("#nextButton").click(function(){
+                        next()
+                });
+                $("#prevButton").click(function(){
+                        prev()
+                });
+        });
+
+
+</script>
+
+<div class="jumbotron">
+  <h1 class="display-3">Trabajos</h1>
+
+<label class="radio-inline" id="name_check"><input type="radio" name="optradio" checked="checked">Titulo</label>
+<label class="radio-inline" id="location_check"><input type="radio" name="optradio">Ciudad</label>
+<label class="radio-inline" id="company_check"><input type="radio" name="optradio">Empresa</label>
+<label class="radio-inline" id="summary_check"><input type="radio" name="optradio">Palabras Clave</label>
+
+  <div class="input-group">
+    <input type="text" class="form-control" id="search_field" placeholder="Search">
+    <div class="input-group-btn">
+      <button class="btn btn-default" id="searchButton">
+              <small>Buscar</small>
+      </button>
+    </div>
+  </div>
+
+  <table id="results" style="width:100%">
+  <tr>
+    <th>Titulo</th>
+    <th>Ciudad</th>
+    <th>Descripcion</th>
+    <th>Empresa</th>
+    <th>Enlace</th>
+
+  </tr>
+</table>
+
+<div>
+<button type="button" class="btn btn-xs" id="prevButton">Anterior</button>
+<button type="button" class="btn btn-xs" id="nextButton">Siguiente</button>
+</div>
+</div>
+
+{% endblock %}

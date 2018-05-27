@@ -1,0 +1,1 @@
+mongoimport --host  cluster0-shard-00-00-fjo6d.mongodb.net:27017 --db trabajos --collection isi --type json --file ./data.json --jsonArray --authenticationDatabase admin --ssl --username isi-user --password 0608neyumansa

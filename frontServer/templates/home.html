@@ -1,0 +1,26 @@
+{% extends 'layout.html' %}
+
+{% block title %}  {% endblock %}
+
+{% block content %}
+
+<div class="header clearfix">
+  <nav>
+    {% block nav %}
+    <ul class="nav nav-pills float-right">
+      <li class="nav-item">
+        <a class="nav-link active" href="/">Home <span class="sr-only">(current)</span></a>
+      </li>
+
+    </ul>
+    {% endblock %}
+
+  </nav>
+
+  <h3 class="text-muted">{% block nav_title %} {% endblock %}</h3>
+</div>
+
+{% block panel %} {% endblock %}
+
+
+{% endblock %}

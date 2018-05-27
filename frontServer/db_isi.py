@@ -1,12 +1,12 @@
 import pymongo
 from pymongo import MongoClient
 
-client = pymongo.MongoClient("mongodb://isi-user:0608neyumansa@cluster0-shard-00-00-fjo6d.mongodb.net:27017,cluster0-shard-00-01-fjo6d.mongodb.net:27017,cluster0-shard-00-02-fjo6d.mongodb.net:27017/test?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin&retryWrites=true")
+client = pymongo.MongoClient("mongodb://isi-read-only-user:cIW25owBr5NPcEKG@cluster0-shard-00-00-fjo6d.mongodb.net:27017,cluster0-shard-00-01-fjo6d.mongodb.net:27017,cluster0-shard-00-02-fjo6d.mongodb.net:27017/test?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin&retryWrites=true")
 
-db = client.trabajos.isi
+collection = client.trabajos.isi
 
 def find_by_key(key, value):
-    return db.find( {key: value})
+    return collection.find( {key: value})
 
-def search(query):
-    return db.find()
+def search(value):
+    return collection.find({"$text": {"$search": value}})

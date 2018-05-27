@@ -13,7 +13,7 @@ ISI
 <script>
         var inverted = false;
         var font_changed = false;
-        var searchBy = "name"
+        var searchBy = "keywords"
         var id_row = 0
         var first_shown = true
         var primero = 0
@@ -90,8 +90,8 @@ ISI
                 $("#company_check").click(function(){
                         searchBy = "company"
                 });
-                $("#summary_check").click(function(){
-                        searchBy = "summary"
+                $("#keyword_check").click(function(){
+                        searchBy = "keywords"
                 });
 
                 $("#searchButton").click(function(){
@@ -107,7 +107,15 @@ ISI
                 $("#prevButton").click(function(){
                         prev()
                 });
+
+
+                $('#search_field').keyup(function (e) {
+                    if (e.keyCode === 13) {
+                       $("#searchButton").click();
+                    }
+                  });
         });
+
 
 
 </script>
@@ -115,10 +123,10 @@ ISI
 <div class="jumbotron">
   <h1 class="display-3">Trabajos</h1>
 
-<label class="radio-inline" id="name_check"><input type="radio" name="optradio" checked="checked">Titulo</label>
+<label class="radio-inline" id="keyword_check"><input type="radio" name="optradio" checked="checked">Palabras Clave</label>
+<label class="radio-inline" id="name_check"><input type="radio" name="optradio">Titulo</label>
 <label class="radio-inline" id="location_check"><input type="radio" name="optradio">Ciudad</label>
 <label class="radio-inline" id="company_check"><input type="radio" name="optradio">Empresa</label>
-<label class="radio-inline" id="summary_check"><input type="radio" name="optradio">Palabras Clave</label>
 
   <div class="input-group">
     <input type="text" class="form-control" id="search_field" placeholder="Search">
@@ -145,5 +153,4 @@ ISI
 <button type="button" class="btn btn-xs" id="nextButton">Siguiente</button>
 </div>
 </div>
-
 {% endblock %}

@@ -1,0 +1,4 @@
+1º Crear entorno virtual
+2º Crear proyecto scrapy -> scrapy startproject yobalia
+3º Activar entorno virtual -> /bin/source activate
+4º Dentro del proyecto -> scrapy crawl yobalia

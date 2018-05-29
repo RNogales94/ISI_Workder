@@ -1,0 +1,65 @@
+{
+  "currentPage": 1,
+  "pageSize": 20,
+  "totalResults": 45460,
+  "currentResults": 20,
+  "totalPages": 114,
+  "offers": [
+     {
+        "id": "0491ee1db54dc3862ecebb7cceac3f",
+        "title": "TIC Educacion",
+        "province": {
+           "id": 9,
+           "value": "Barcelona"
+        },
+        "city": "Barcelona",
+        "link": "https://www.infojobs.net/barcelona/tic-educacion/of-i0491ee1db54dc3862ecebb7cceac3f",
+        "category": {
+           "id": 190,
+           "value": "Comercial y ventas"
+        },
+        "contractType": {
+           "id": 1,
+           "value": "Indefinido"
+        },
+        "subcategory": {
+           "id": 3119,
+           "value": "Comercial"
+        },
+        "salaryMin": {
+           "id": 0,
+           "value": ""
+        },
+        "salaryMax": {
+           "id": 0,
+           "value": ""
+        },
+        "salaryPeriod": {
+           "id": 0,
+           "value": ""
+        },
+        "experienceMin": {
+           "id": 3,
+           "value": "Al menos 3 años"
+        },
+        "workDay": {
+           "id": 1,
+           "value": "Completa"
+        },
+        "study": {
+           "id": 120,
+           "value": "Ingeniería Técnica"
+        },
+        "published": "2018-04-28T15:08:15.000Z",
+        "updated": "2018-04-28T15:08:15.000Z",
+        "author": {
+           "id": "56950524541001540187935042479",
+           "name": "Empresa líder en su sector",
+           "uri": "http://www.infojobs.net//api.infojobs.net/empresa-lider-en-su-sector/em-i56950524541001540187935042479"
+        },
+        "bold": false,
+        "urgent": false,
+        "applications": "0"
+      }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "currentPage": 6,
+  "pageSize": 20,
+  "totalResults": 45460,
+  "currentResults": 20,
+  "totalPages": 114,
+  "offers": [{        "id": "f599d08a9749bcbb9c418a6b8cdabc",
+        "title": "CHARCUTERO/A  ZONA POZUELO ( MADRID)",
+        "province": {
+           "id": 33,
+           "value": "Madrid"
+        },
+        "city": "Pozuelo * ",
+        "link": "https://www.infojobs.net/pozuelo-*/charcutero-zona-pozuelo-madrid/of-if599d08a9749bcbb9c418a6b8cdabc",
+        "category": {
+           "id": 170,
+           "value": "Atención a clientes"
+        },
+        "contractType": {
+           "id": 8,
+           "value": "De duración determinada"
+        },
+        "subcategory": {
+           "id": 3118,
+           "value": "Atención al cliente"
+        },
+        "salaryMin": {
+           "id": 0,
+           "value": ""
+        },
+        "salaryMax": {
+           "id": 0,
+           "value": ""
+        },
+        "salaryPeriod": {
+           "id": 0,
+           "value": ""
+        },
+        "experienceMin": {
+           "id": 2,
+           "value": "Al menos 1 año"
+        },
+        "workDay": {
+           "id": 1,
+           "value": "Completa"
+        },
+        "study": {
+           "id": 20,
+           "value": "Educación Secundaria Obligatoria"
+        },
+        "published": "2018-04-28T14:31:45.000Z",
+        "updated": "2018-04-28T14:31:45.000Z",
+        "author": {
+           "id": "07adbc3d6846649049d8fa8fcbed87",
+           "name": "DIA - ALMACENES Y TIENDAS",
+           "uri": "http://www.infojobs.net//dia.trabajo.infojobs.net"
+        },
+        "bold": false,
+        "urgent": false,
+        "applications": "0"
+
+  }]
+}

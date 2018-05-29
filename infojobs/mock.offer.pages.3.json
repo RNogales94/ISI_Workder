@@ -1,0 +1,65 @@
+{
+  "currentPage": 3,
+  "pageSize": 20,
+  "totalResults": 45460,
+  "currentResults": 20,
+  "totalPages": 114,
+  "offers": [
+     {
+        "id": "c27cdae0ec47d693c9a093d1554ec2",
+        "title": "CONSEILLER TÉLÉPHONIQUE FRANCAIS ET ANGLAIS.",
+        "province": {
+           "id": 9,
+           "value": "Barcelona"
+        },
+        "city": "Barcelona",
+        "link": "https://www.infojobs.net/barcelona/conseiller-telephonique-francais-et-anglais./of-ic27cdae0ec47d693c9a093d1554ec2",
+        "category": {
+           "id": 170,
+           "value": "Atención a clientes"
+        },
+        "contractType": {
+           "id": 5,
+           "value": "Otros contratos"
+        },
+        "subcategory": {
+           "id": 3118,
+           "value": "Atención al cliente"
+        },
+        "salaryMin": {
+           "id": 0,
+           "value": ""
+        },
+        "salaryMax": {
+           "id": 0,
+           "value": ""
+        },
+        "salaryPeriod": {
+           "id": 0,
+           "value": ""
+        },
+        "experienceMin": {
+           "id": 1,
+           "value": "No Requerida"
+        },
+        "workDay": {
+           "id": 1,
+           "value": "Completa"
+        },
+        "study": {
+           "id": 20,
+           "value": "Educación Secundaria Obligatoria"
+        },
+        "published": "2018-04-28T13:01:46.000Z",
+        "updated": "2018-04-28T13:01:46.000Z",
+        "author": {
+           "id": "962453524526202150553215054889",
+           "name": "CCA INTERNATIONAL",
+           "uri": "http://www.infojobs.net//api.infojobs.net/cca-international/em-i962453524526202150553215054889"
+        },
+        "bold": false,
+        "urgent": false,
+        "applications": "0"
+     }
+  ]
+}

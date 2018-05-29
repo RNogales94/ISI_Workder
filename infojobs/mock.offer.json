@@ -1,0 +1,62 @@
+{
+  "currentPage": 1,
+  "pageSize": 20,
+  "totalResults": 45801,
+  "currentResults": 20,
+  "totalPages": 114,
+  "offers": [
+     {
+        "id": "1e3c0d77614cabb9e0092858326b7c",
+        "title": "CARRETILLERO/A RETRÁCTIL  (HP)",
+        "province": {
+           "id": 9,
+           "value": "Barcelona"
+        },
+        "city": "Hospitalet De Llobregat",
+        "link": "https://www.infojobs.net/hospitalet-de-llobregat/carretillero-retractil-hp/of-i1e3c0d77614cabb9e0092858326b7c",
+        "category": {
+           "id": 40,
+           "value": "Compras, logística y almacén"
+        },
+        "contractType": {
+           "id": 0,
+           "value": ""
+        },
+        "subcategory": {
+           "id": 3026,
+           "value": "Almacén"
+        },
+        "salaryMin": {
+           "id": 0,
+           "value": ""
+        },
+        "salaryMax": {
+           "id": 0,
+           "value": ""
+        },
+        "salaryPeriod": {
+           "id": 0,
+           "value": ""
+        },
+        "experienceMin": {
+           "id": 2,
+           "value": "Al menos 1 año"
+        },
+        "workDay": {
+           "id": 4,
+           "value": "Parcial - Noche"
+        },
+        "study": {
+           "id": 160,
+           "value": "Otros títulos, certificaciones y carnés"
+        },
+        "published": "2018-04-26T15:30:05.000Z",
+        "updated": "2018-04-26T15:30:05.000Z",
+        "author": {
+           "id": "961452524526202150993215350213",
+           "name": "MARLEX Interim",
+           "uri": "http://www.infojobs.net//api.infojobs.net/marlex-interim/em-i961452524526202150993215350213"
+        }
+     }
+  ]
+}

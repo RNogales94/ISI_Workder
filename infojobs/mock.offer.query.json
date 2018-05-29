@@ -1,0 +1,66 @@
+{
+  "currentPage": 1,
+  "pageSize": 20,
+  "totalResults": 1668,
+  "currentResults": 20,
+  "totalPages": 84,
+  "offers": [
+     {
+        "id": "3b830e44a9426fb3d1410b8618fdcb",
+        "title": "Programador Java /Java developer SENIOR",
+        "province": {
+           "id": 9,
+           "value": "Barcelona"
+        },
+        "city": "Barcelona",
+        "link": "https://www.infojobs.net/barcelona/programador-java-java-developer-senior/of-i3b830e44a9426fb3d1410b8618fdcb",
+        "category": {
+           "id": 80,
+           "value": "Ingenieros y técnicos"
+        },
+        "contractType": {
+           "id": 1,
+           "value": "Indefinido"
+        },
+        "subcategory": {
+           "id": 3049,
+           "value": "Industrial"
+        },
+        "salaryMin": {
+           "id": 0,
+           "value": ""
+        },
+        "salaryMax": {
+           "id": 0,
+           "value": ""
+        },
+        "salaryPeriod": {
+           "id": 0,
+           "value": ""
+        },
+        "experienceMin": {
+           "id": 4,
+           "value": "Al menos 4 años"
+        },
+        "workDay": {
+           "id": 1,
+           "value": "Completa"
+        },
+        "study": {
+           "id": 130,
+           "value": "Ingeniería Superior"
+        },
+        "published": "2018-04-24T14:47:12.000Z",
+        "updated": "2018-04-24T14:47:12.000Z",
+        "author": {
+           "id": "131953524536308401605105544644",
+           "name": "AKKA TECHNOLOGIES SPAIN S.L.U.",
+           "uri": "http://www.infojobs.net//akka.ofertas-trabajo.infojobs.net"
+        },
+        "requirementMin": "",
+        "bold": false,
+        "urgent": false,
+        "applications": "0"
+     }
+  ]
+}
